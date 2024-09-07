@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <img src="path/to/small-image.jpg" class="character" alt="Character Animation">
+    <title>Asri Amalia - Personal Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #e91e63, #f06292);
+            padding: 60px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        header p {
+            font-size: 1.3em;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+        }
+
+        /* Animated Character */
+        .character {
+            width: 150px;
+            position: absolute;
+            bottom: -30px;
+            right: 50px;
+            animation: float 4s infinite ease-in-out;
+        }
+        @media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+}
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Main Content */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #e91e63;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: left;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #e91e63;
+        }
+
+        .card p {
+            font-size: 1em;
+            margin-top: 10px;
+        }
+
+        /* Rating Section */
+        .rating {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .star {
+            color: gold;
+            font-size: 1.5em;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #e91e63;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Asri Amalia</h1>
+        <p>Kepribadian yang ramah, kreatif, dan penuh semangat.</p>
+        <img src="https://via.placeholder.com/150" class="character" alt="Character Animation">
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>Halo! Saya Asri Amalia, seorang mahasiswa yang penuh semangat dan kreatif, dengan minat besar dalam desain, teknologi, dan seni. Saya senang mempelajari hal-hal baru dan terus mengembangkan keterampilan saya untuk masa depan yang lebih baik.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="content">
+            <h2>Skills</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <p>Saya mampu membuat website menggunakan HTML, CSS, dan JavaScript dengan desain yang responsif dan interaktif.</p>
+                </div>
+                <div class="card">
+                    <h3>Graphic Design</h3>
+                    <p>Saya mahir dalam menggunakan Adobe Photoshop dan Illustrator untuk menciptakan desain grafis yang menarik dan inovatif.</p>
+                </div>
+                <div class="card">
+                    <h3>Singing</h3>
+                    <p>Saya memiliki bakat dalam bernyanyi dan sering berpartisipasi dalam acara-acara kampus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies">
+        <div class="content">
+            <h2>Hobbies</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Photography</h3>
+                    <p>Saya senang mengambil foto pemandangan alam dan mengabadikan momen-momen indah melalui lensa kamera.</p>
+                </div>
+                <div class="card">
+                    <h3>Travelling</h3>
+                    <p>Menjelajahi tempat-tempat baru dan belajar budaya lokal adalah salah satu cara saya memperkaya pengalaman hidup.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Prospects Section -->
+    <section id="prospects">
+        <div class="content">
+            <h2>Prospek Kerja</h2>
+            <p>Saya bercita-cita untuk bekerja sebagai web developer atau desainer grafis, di mana saya dapat memadukan keterampilan teknologi dan seni untuk menciptakan solusi kreatif.</p>
+        </div>
+    </section>
+
+    <!-- Client Ratings Section -->
+    <section id="ratings">
+        <div class="content">
+            <h2>Client Ratings</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Project A</h3>
+                    <p>"Asri adalah orang yang sangat profesional dan kreatif. Saya sangat puas dengan hasil kerjanya."</p>
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Project B</h3>
+                    <p>"Kualitas kerja Asri sangat luar biasa. Pekerjaannya selesai tepat waktu dan hasilnya sesuai harapan."</p>
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Asri Amalia. All rights reserved.</p>
+    </footer>
+    console.log("Page loaded successfully!");
+
+</body>
+</html>
